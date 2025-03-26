@@ -2,11 +2,13 @@ from huggingface_hub import HfApi, login, snapshot_download
 import pathlib
 
 # Authentication token for Hugging Face
-HF_TOKEN = "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"
+HF_TOKEN = ""
 
 # Login to Hugging Face
 login(token=HF_TOKEN)
 api = HfApi(token=HF_TOKEN)
+
+# Read a geotiff
 
 # Repository details
 repo_id = "tacofoundation/sen2neon"
